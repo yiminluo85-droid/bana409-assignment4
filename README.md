@@ -1,6 +1,6 @@
 # 北辰分析｜销售脉搏
 
-本仓库包含 BANA409 作业 4 的 Streamlit 数据应用，以及配套的手机以旧换新定价分析 Notebook。
+本仓库包含 BANA409 作业 4 第一部分的 Streamlit 数据应用。第二部分的手机以旧换新定价分析 Notebook 按作业要求单独提交到 Canvas，因此不在公开仓库中发布。
 
 ## 运行仪表板
 
@@ -9,7 +9,7 @@ uv sync
 uv run streamlit run app.py
 ```
 
-项目使用 Python 3.14。Streamlit Cloud 可以通过 `requirements.txt` 安装精简的部署依赖；本地运行完整 Notebook 时，可使用 `pyproject.toml` 和 `uv.lock` 复现分析环境。
+项目使用 Python 3.14。Streamlit Cloud 通过 `requirements.txt` 安装部署依赖。
 
 ## 第一步：数据集与决策者
 
@@ -47,7 +47,5 @@ uv run streamlit run app.py
 
 - `app.py`：Streamlit 销售仪表板。
 - `data/superstore_sales.csv`：从 Kaggle 下载的仪表板数据集。
-- `phone-trade-in.ipynb`：第二部分的数据分析、模型比较和书面回答。
-- `analysis.py`：用于复核 Notebook 结果的确定性分析脚本。
-- `outputs/`：分析脚本生成的结果表和图表。
 - `requirements.txt`：部署仪表板所需的最小依赖清单。
+- `.python-version`：部署环境使用的 Python 版本。
